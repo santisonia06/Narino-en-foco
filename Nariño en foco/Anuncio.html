@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+                
+                <!--Icon-->
+                <link rel="icon" href="img/logo/BaiCot-ico.png">
+                <!--Icon-->
+                
+                <!--Title-->
+		        <title>BaiCot</title>
+                <!--Title-->
+	</head>
+	<body>
+	
+	
+	<center>
+<div  class="anuncio" id="primeranuncio">
+
+<div class="Titulo_Ads">
+  <h1 class="Anuncio_Page"> Anuncio</h1>
+  
+
+  <button class="boton" onclick="cerraranuncio('primeranuncio')" id="Tiempo_De_Espera-Ads">✖</button>
+
+  
+</div> 
+  
+  
+<video width="500" height="300"  class="Video_Abs" loop="true" autoplay="autoplay" id="Video" controls  autoplay playinline loop muted preload="auto">
+  <source src="Eminem  The Real Slim Shady Official Video  Clean Version_720p.mp4" type="video/mp4">
+  <!-- Texto alternativo -->Tu Navegador no es compatible
+</video>
+
+
+</div>
+ </center>
+
+<style>
+.Video_Abs {
+
+   background-color: #00000040;
+    padding: 60px;
+
+}
+.Titulo_Ads {
+    background-color: #fff;
+   top: -20px;
+    padding: 20px;
+    width: 100%;
+ 
+    position: relative;
+}
+.anuncio {
+     height: 100%;
+    display: block;
+    background-color: #000;
+    padding: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    
+}
+
+.boton {
+       float: left;
+    left: 780px;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    top: 40px;
+    padding: 0.8em;
+    font-weight: 800;
+}
+.Anuncio_Page {
+  font-weight: 500; 
+  font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+#Tiempo_De_Espera-Ads {
+display: none;
+}
+</style>
+<script>
+var body = document.body;
+var video = document.querySelector("#video");
+
+var space = false;
+
+body.onkeydown = function(e){
+    if (e.keyCode == 32 && !space) {
+        space = true;
+        video.pause();
+    }else if(e.keyCode == 32 && space){
+        space = false;
+        video.play();
+    }
+}
+
+var cerraranuncio = anuncio => {
+  document.getElementById(anuncio).style.display = "none";
+  
+   
+    window.location = "index.html";
+	setTimeout(redirect, 4000);
+	
+	
+	let times = 0;
+  setInterval(() => {
+  if (times > 5000) {
+    document.getElementById(anuncio).style.display = "block";
+	times++
+	}
+  }, 6000) //cuatro segundos
+  }
+
+
+
+
+
+function esperar() {
+ document.getElementById("Tiempo_De_Espera-Ads").style.display = "block";
+}
+
+setTimeout(esperar, 6000);
+
+</script>
+	
+
+
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
