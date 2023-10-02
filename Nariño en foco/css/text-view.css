@@ -1,0 +1,54 @@
+		
+   
+.rollover-text-view {
+  visibility: hidden;
+}
+ 
+.text-view-HS:hover .rollover-text-view {
+    visibility: visible;
+    top: -100px;
+    position: relative;
+    left: 60px;
+	
+	
+}
+
+.text-view-HS:hover .rollover-text-view {
+    visibility: visible;
+    top: 0px;
+    position: absolute;
+}
+
+.text-view-HS:hover .text-view-decoration{
+background-color: #000000;
+border: 1px solid #fff;
+
+}
+
+
+.text-view-HS {
+color: #fff;
+position: absolute;
+top: 0px;
+}
+
+.text-view-decoration {
+border-radius: 5px;
+background-color: #21212152;
+padding: 10px;
+
+transition: all 1s ease-out;
+font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+ font-size: 19px;
+
+position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.text-view-decoration:hover {
+background-color: #000000;
+transition: all 1s ease-out;
+border: 1px solid #fff;
+}
+
+		
